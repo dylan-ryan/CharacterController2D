@@ -15,22 +15,22 @@ public class CharacterController2D : MonoBehaviour
     }
     private void Update()
     {
-        movement.y = Input.GetAxisRaw("Vertical");
-        movement.x = Input.GetAxisRaw("Horizontal");
-        if(movement != Vector2.zero)
+            movement.y = Input.GetAxisRaw("Vertical");
+            movement.x = Input.GetAxisRaw("Horizontal");
+        if (movement != Vector2.zero)
         {
+        animator.SetFloat("motionY", movement.y);
+        animator.SetFloat("motionX", movement.x);
             animator.SetBool("moving", true);
         }
         else
         {
             animator.SetBool("moving", false);
         }
-        animator.SetFloat("motionY", movement.y);
-        animator.SetFloat("motionX", movement.x);
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position+movement*moveSpeed*Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }
