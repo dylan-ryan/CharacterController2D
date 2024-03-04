@@ -3641,12 +3641,20 @@ PrefabInstance:
       value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 7169267930173634729, guid: 25d50eb66f1050440ac23d4ebdc04297, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9564459
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169267930173634729, guid: 25d50eb66f1050440ac23d4ebdc04297, type: 3}
       propertyPath: m_Size.y
-      value: 0.7246919
+      value: 0.548115
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169267930173634729, guid: 25d50eb66f1050440ac23d4ebdc04297, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.000000029802322
       objectReference: {fileID: 0}
     - target: {fileID: 7169267930173634729, guid: 25d50eb66f1050440ac23d4ebdc04297, type: 3}
       propertyPath: m_Offset.y
-      value: -0.5458846
+      value: -0.6524396
       objectReference: {fileID: 0}
     - target: {fileID: 7916143716021110807, guid: 25d50eb66f1050440ac23d4ebdc04297, type: 3}
       propertyPath: m_LocalPosition.x
